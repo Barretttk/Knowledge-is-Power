@@ -1,12 +1,15 @@
 import React from "react";
+import Navbar from "./components/nav/Navbar";
+import "./styles.css";
 
 const App = () => {
   return (
-    <Router>
+
+    // <Router>
       <div className="container">
-        
+        <Navbar />
       </div>
-    </Router>
+    // </Router>
   );
 };
 
