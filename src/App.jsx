@@ -1,6 +1,7 @@
 import React, { createContext, useState} from "react";
 // import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/nav/Navbar";
+import Home from "./pages/home/Home";
 import "./styles.css";
 
 
@@ -21,6 +22,7 @@ const toggleTheme = () => {
     {/* <Router> */}
       <div className="container" id="{theme}">
         <Navbar />
+        <Home />
       </div>
     {/* </Router> */}
 </ThemeContext.Provider>

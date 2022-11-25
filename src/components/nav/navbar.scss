@@ -1,0 +1,138 @@
+.navbar-items{
+    display: flex;
+    justify-content: space-between;
+    justify-content:center ;
+    align-items: center;
+    align-content: center;
+    font-size: 1.2rem;
+    padding: 0 30px;
+    background-color: rgb(250, 164, 3);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+    width: 95%;
+    height: 80px;
+    border-radius: 13px;
+    position: fixed;
+    top: 20px;
+    left: 50px;
+
+}
+.title-name{
+    display: flex;
+    color: black;
+    font-size: 1.6rem;
+    font-weight: bold;
+    justify-self: start;
+    cursor: pointer;
+    align-items: center;
+    justify-items: center;
+    position: relative;
+
+}
+
+.title-image{
+    justify-self: center;
+    height: auto;
+    width: 20%;
+    margin-top: px;
+    position: relative;
+}
+
+.links{
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    grid-gap: 10px;
+    list-style: none;
+    align-items: center;
+    text-align: center;
+    justify-items: end;
+
+
+    .nav-links{
+        text-decoration: none;
+        color: black;
+        padding: 0.7rem 1rem;
+        white-space: nowrap;
+
+            .nav-links{
+                padding-right: 10px;
+            }
+    }
+}
+
+    .nav-links:hover{
+      background-color: rgba(80, 80, 238);
+      border-radius: 4px;
+      transition: all 0.4s ease-in-out;
+}
+
+.nav-links-mobile{
+    padding: 0.5rem 1rem;
+    white-space: nowrap;
+    background-color: #fafafa;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    color: #222;
+}
+
+.menu-ham{
+    display: none
+}
+
+
+// mobile function
+
+@media screen and (max-width:850px) {
+    .navbar-items{
+        z-index: 99;
+    }
+        .links{
+            display:flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            background: rgda(255, 255, 255, .25);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, .37);
+            backdrop-filter: blur(4px);
+            border-radius: 13px;
+            width: 100%;
+            height: auto;
+            position: absolute;
+            top: 0;
+            left: -110%;
+            align-items: stretch;
+            padding: 80px 0 30px 0;
+            margin: 0;
+            z-index: -1;
+            transition: all 0.5s ease-in-out;
+            
+        }
+
+        .links.active{
+            left: 0;
+        }
+
+        .nav-links{
+            display: block;
+            widows: 100%;
+            padding: 2rem 0;
+            color: #222;
+        }
+
+        .nav-links:hover{
+            background-color: rgb(250, 164, 3);
+            backdrop-filter: blur(20px);
+        }
+
+        .menu-ham{
+            display: block;
+
+        .nav-links-mobile{
+            padding: 1.5rem;
+            display: block;
+            text-align: center;
+            font-size: 1.3rem;
+            font-weight: bold;
+            width: 80%;
+            margin: auto;
+        }
+    }
+}
