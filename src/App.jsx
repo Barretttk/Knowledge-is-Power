@@ -4,6 +4,8 @@ import Navbar from "./components/nav/Navbar";
 import Home from "./pages/home/Home";
 import Register from "./pages/register/Register";
 import Login from "./pages/login/Login";
+import Web from "./pages/webfund/Web";
+import Webp2 from "./pages/webfund/Webp2";
 
 
 import "./styles.css";
@@ -31,9 +33,10 @@ const App = () => {
                 
                 <Route path={'/Register'} element={<Register />} />
                 <Route path={'/Login'} element={<Login />} />
-                
-                <Route path={'/Login'} element={<Login />} />
 
+                <Route path={'/WF'} element={<Web />} />
+                <Route path={'/WF2'} element={<Webp2 />} />
+                
 
 
 
