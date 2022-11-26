@@ -6,8 +6,17 @@ const home = () => {
     <div>
       <div className="home">
         <div className="container">
-            <div className="text">
+            <div className="top-content">
+
+            <div className="title">
                 
+            </div>
+            </div>
+            <div className="mid-content">
+
+            </div>
+            <div className="bottom-content">
+
             </div>
         </div>
       </div>

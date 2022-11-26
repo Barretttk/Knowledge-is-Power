@@ -1,10 +1,12 @@
 import React, { createContext, useState } from "react";
 import "./styles.css";
-import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate, NavLink } from "react-router-dom";
 import Navbar from "./components/nav/Navbar";
 import Home from "./pages/home/Home";
 import Register from "./pages/register/Register";
 import Login from "./pages/login/Login";
+import Dashboard from "./pages/dashboard/Dashboard";
+
 import Web from "./pages/webfund/Web";
 import Webp2 from "./pages/webfund/Webp2";
 
@@ -31,10 +33,12 @@ const App = () => {
           <Navbar />
 
             <Routes>
+
                 <Route path={'/'} element={<Navigate to='/Home' />} />
                 <Route path={'/Home'} element={<Home />} />
                 
                 <Route path={'/Register'} element={<Register />} />
+                <Route path={'/Dashboard'} element={<Dashboard />} />
 
                 <Route element={ <Withoutnav /> }>
                     <Route path='/Login' element={<Login />} />
@@ -44,10 +48,6 @@ const App = () => {
                 <Route path={'/WF2'} element={<Webp2 />} />
                 
 
-
-
-                
-                
             </Routes>
           </Router>
           <Home />
