@@ -1,4 +1,5 @@
 import React, { createContext, useState } from "react";
+import "./styles.css";
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import Navbar from "./components/nav/Navbar";
 import Home from "./pages/home/Home";
@@ -8,7 +9,7 @@ import Web from "./pages/webfund/Web";
 import Webp2 from "./pages/webfund/Webp2";
 
 
-import "./styles.css";
+import Withoutnav from "./components/withoutnav/Withoutnav";
 
 
 export const ThemeContext = createContext(null);
@@ -34,7 +35,10 @@ const App = () => {
                 <Route path={'/Home'} element={<Home />} />
                 
                 <Route path={'/Register'} element={<Register />} />
-                <Route path={'/Login'} element={<Login />} />
+
+                <Route element={ <Withoutnav /> }>
+                    <Route path='/Login' element={<Login />} />
+                </Route>
 
                 <Route path={'/WF'} element={<Web />} />
                 <Route path={'/WF2'} element={<Webp2 />} />
