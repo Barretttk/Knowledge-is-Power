@@ -10,7 +10,9 @@ import Webp2 from "./pages/webfund/Webp2";
 
 import "./styles.css";
 
+
 export const ThemeContext = createContext(null);
+
 
 const App = () => {
   const [theme, seTheme] = useState("light");
@@ -29,7 +31,7 @@ const App = () => {
 
             <Routes>
                 <Route path={'/'} element={<Navigate to='/Home' />} />
-                <Route path={'/home'} element={<Home />} />
+                <Route path={'/Home'} element={<Home />} />
                 
                 <Route path={'/Register'} element={<Register />} />
                 <Route path={'/Login'} element={<Login />} />
