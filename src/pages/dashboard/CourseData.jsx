@@ -1,7 +1,7 @@
 export const CourseData = [
   {
     title: "Web Fundamentals",
-    url: "#",
+    url: "/WF",
     cName: "course-links",
     icon: <img 
           className="course-image" 

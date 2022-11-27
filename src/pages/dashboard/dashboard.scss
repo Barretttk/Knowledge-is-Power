@@ -1,0 +1,29 @@
+.course-cards {
+    // margin-top:500px;
+    display: flex;
+    // flex-direction: column;
+    justify-content: center;
+}
+
+.card-text-center{
+    border: 1px solid black;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+
+    .card-header{
+        border: 1px solid black;
+        
+        .card-body{
+            border: 1px solid black;
+
+            
+            }
+        }
+    }
+    .icon{
+        width: 10px;
+        height: 10px;
+    }
