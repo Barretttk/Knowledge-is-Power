@@ -30,7 +30,9 @@ const Dashboard = () => {
                         {item.title}
                       </a>
                     </div>
-                    <div class="card-footer text-muted"></div>
+                    <div class="card-footer text-muted">
+                        
+                    </div>
                   </div>
                 );
             })}
